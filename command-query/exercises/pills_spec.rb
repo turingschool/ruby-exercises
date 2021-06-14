@@ -8,7 +8,7 @@ RSpec.describe Pills do
     expect(pills.count).to eq(60)
   end
 
-  xit 'it pops a pill' do
+  it 'it pops a pill' do
     pills = Pills.new
 
     pills.pop

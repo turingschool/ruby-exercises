@@ -8,7 +8,7 @@ RSpec.describe Door do
     expect(door.locked?).to be true
   end
 
-  xit 'unlocks the door' do
+  it 'unlocks the door' do
     door = Door.new
 
     door.unlock

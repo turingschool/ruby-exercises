@@ -8,7 +8,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(0)
   end
 
-  xit 'can add pennies' do
+  it 'can add pennies' do
     wallet = Wallet.new
 
     wallet << :penny
@@ -18,7 +18,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(4)
   end
 
-  xit 'can add nickels' do
+  it 'can add nickels' do
     wallet = Wallet.new
 
     wallet << :nickel
@@ -28,7 +28,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(20)
   end
 
-  xit 'can add dimes' do
+  it 'can add dimes' do
     wallet = Wallet.new
 
     wallet << :dime
@@ -38,7 +38,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(40)
   end
 
-  xit 'can add quarters' do
+  it 'can add quarters' do
     wallet = Wallet.new
 
     wallet << :quarter
@@ -48,7 +48,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(100)
   end
 
-  xit 'can take coins out' do
+  it 'can take coins out' do
     wallet = Wallet.new
     wallet << :penny
     wallet << :penny
@@ -62,7 +62,7 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(1)
   end
 
-  xit 'can taake various coins out' do
+  it 'can taake various coins out' do
     wallet = Wallet.new
     wallet << :penny
     wallet << :dime
@@ -73,10 +73,11 @@ RSpec.describe Wallet do
     expect(wallet.cents).to eq(26)
   end
 
-  xit 'ignores coins that arent there' do
+  it 'ignores coins that arent there' do
     wallet = Wallet.new
     wallet << :penny
     wallet.take(:dime)
 
     expect(wallet.cents).to eq(1)
   end
+end

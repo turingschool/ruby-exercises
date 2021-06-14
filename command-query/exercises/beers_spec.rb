@@ -15,7 +15,7 @@ RSpec.describe Beers do
     expect(beers.inventory).to eq(98)
 
     53.times { beers.take_one_down_and_pass_it_around }
-    expect(beers.inventory),to eq(45)
+    expect(beers.inventory).to eq(45)
   end
 
   it 'restocks' do

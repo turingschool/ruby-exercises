@@ -8,7 +8,7 @@ RSpec.describe Floor do
     expect(floor.dirty?).to be true
   end
 
-  xit 'is clean after it is washed' do
+  it 'is clean after it is washed' do
     floor = Floor.new
 
     floor.wash

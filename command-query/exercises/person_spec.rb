@@ -8,7 +8,7 @@ RSpec.describe Person do
     expect(person.age).to eq(0)
   end
 
-  xit 'gets older' do
+  it 'gets older' do
     person = Person.new
 
     person.happy_birthday

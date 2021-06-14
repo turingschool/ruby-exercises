@@ -7,7 +7,7 @@ RSpec.describe MilkBottle do
     expect(bottle.full?).to be true
   end
 
-  xit 'spills milk' do
+  it 'spills milk' do
     bottle = MilkBottle.new
 
     bottle.spill

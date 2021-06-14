@@ -13,7 +13,7 @@ RSpec.describe Clearance do
     # the discount here is a price, so this discount would be 20 percent
     clearance << Item.new('socks', price: 5, discount: 1)
 
-    expect(cleraance.best_deal).to eq('socks')
+    expect(clearance.best_deal).to eq('socks')
   end
 
   it 'has higest percent off many items' do
@@ -25,4 +25,3 @@ RSpec.describe Clearance do
     expect(clearance.best_deal).to eq('pants')
   end
 end
-

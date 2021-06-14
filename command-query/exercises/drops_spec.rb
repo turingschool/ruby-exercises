@@ -8,7 +8,7 @@ RSpec.describe Drops do
     expect(drops.count).to eq(0)
   end
 
-  xit 'drips' do
+  it 'drips' do
     drops = Drops.new
     drops.drip
 

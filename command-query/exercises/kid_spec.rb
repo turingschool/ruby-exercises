@@ -8,7 +8,7 @@ RSpec.describe Kid do
     expect(kid.grams_of_sugar_eaten).to eq(0)
   end
 
-  xit 'gets 5 grams from eating candy' do
+  it 'gets 5 grams from eating candy' do
     kid = Kid.new
 
     kid.eat_candy
@@ -20,13 +20,13 @@ RSpec.describe Kid do
     expect(kid.grams_of_sugar_eaten).to eq(30)
   end
 
-  xit 'is not hyperactive' do
+  it 'is not hyperactive' do
     kid = Kid.new
 
     expect(kid.hyperactive?).to be false
   end
 
-  xit 'is hyperactive after 60 grams of sugar' do
+  it 'is hyperactive after 60 grams of sugar' do
     kid = Kid.new
 
     11.times { kid.eat_candy }

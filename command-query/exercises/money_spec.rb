@@ -8,7 +8,7 @@ RSpec.describe Money do
     expect(money.amount).to eq(0)
   end
 
-  xit 'can earn money' do
+  it 'can earn money' do
     money = Money.new
 
     money.earn(20)
@@ -20,4 +20,3 @@ RSpec.describe Money do
     expect(money.amount).to eq(33)
   end
 end
-

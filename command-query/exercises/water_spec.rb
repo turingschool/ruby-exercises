@@ -8,7 +8,7 @@ RSpec.describe Water do
     expect(water.temperature).to eq(295) # Measured in Kelvin
   end
 
-  xit 'can be heated' do
+  it 'can be heated' do
     water = Water.new
 
     water.heat

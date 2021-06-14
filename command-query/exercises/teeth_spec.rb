@@ -8,7 +8,7 @@ RSpec.describe Teeth do
     expect(teeth.clean?).to be false
   end
 
-  xit 'are clean after brushing them' do
+  it 'are clean after brushing them' do
     teeth = Teeth.new
 
     teeth.brush

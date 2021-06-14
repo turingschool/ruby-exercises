@@ -8,7 +8,7 @@ RSpec.describe Santa do
     expect(santa.fits?).to be true
   end
 
-  xit 'does not fit down the chimney if he eats too many cookies' do
+  it 'does not fit down the chimney if he eats too many cookies' do
     santa = Santa.new
     santa.eats_cookies
 
